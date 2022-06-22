@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<skills>
+	<Базы_данных>MySQL</Базы_данных>
+        <GIT>GitBush,GitHub</GIT>
+        <Тестирование_API>Postman</Тестирование_API>
+        <Перехват_трафика>Charles</Перехват_трафика>
+</skills>
