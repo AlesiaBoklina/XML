@@ -1,1 +1,15 @@
-
+<?xml version="1.0" encoding="UTF-8" ?>
+<bug_report>
+    <ID>1</ID>
+    <Title>Footer column headers are not on the same level</Title>
+    <Severiry>Minor</Severiry>
+    <Environment>Windows 10 64 bit Chrome v98.0.3440</Environment>
+    <Precondition>Open site https://qatest-dev.indvp.com</Precondition>"
+    <STR>
+        <1>Open home page</1>
+        <2>Scroll down page</2>
+        <3>Pay attention to the column headings in the footer</3>
+    </STR>
+    <AR>Footer column headers are not on the same level See screenschot</AR>
+    <ER>Column headings on the same level</ER>
+</bug_report>
