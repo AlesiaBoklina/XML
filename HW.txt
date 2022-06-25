@@ -1,0 +1,120 @@
+XML
+ 21. Создать внешний репозиторий c названием XML.
+New
+Repository name XML
+Public
+Add a README file 
+Create repository
+
+ 22. Клонировать репозиторий XML на локальный компьютер.
+Code
+HPPPS
+Copy (копирую ссылку из GitHub)
+В GitBush 
+mkdir XML
+cd JSON
+git clone Copy (вставляю ссылку из GitHub)
+
+ 23. Внутри локального XML создать файл “new.xml”.
+cd XML
+touch new.xml
+
+ 24. Добавить файл под гит.
+git status
+git add new.xml
+
+ 25. Закоммитить файл.
+git commit -m "add file"
+
+ 26. Отправить файл на внешний GitHub репозиторий.
+git push 
+
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+vim new.xml 
+i(insert)
+<?xml version="1.0" encoding="UTF-8" ?>
+<information>
+        <ФИО>Боклина Олеся Ивановна</ФИО>
+        <Возраст>29</Возраст>
+        <Питомцы>нет</Питомцы>
+        <Зарплата>в Европе 1200 евро</Зарплата>
+</information>
+esc
+:wq
+
+ 28. Отправить изменения на внешний репозиторий.
+git status
+git add new.xml
+git commit -m "add data"
+git push
+
+ 29. Создать файл preferences.xml
+touch preferences.xml
+
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+vim preferences.xml
+i(insert)
+<?xml version="1.0" encoding="UTF-8" ?>
+<preferences>
+	<Фильм>Пираты Карибского моря 1ая часть</Фильм>
+        <Сериал>Игра престолов</Сериал>
+        <Еда>Паста с креветками</Еда>
+        <Время_года>Весна</Время_года>
+        <Страна>Швейцария</Страна>
+</preferences>
+esc
+:wq
+ 
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+touch skills.xml
+vim skills.xml
+i(insert)
+<?xml version="1.0" encoding="UTF-8" ?>
+<skills>
+	<Базы_данных>MySQL</Базы_данных>
+        <GIT>GitBush,GitHub</GIT>
+        <Тестирование_API>Postman</Тестирование_API>
+        <Перехват_трафика>Charles</Перехват_трафика>
+</skills>
+Esc
+:wq
+
+ 32. Сделать коммит в одну строку.
+git add skills.xml preferences.xml | git commit -m "add file"
+ 
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+git push
+
+ 34. На веб интерфейсе создать файл bug_report.xml.
+Add file > Create new file
+Name your file... bug_report.xml
+Add description "add file"
+
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Commit new file
+
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+Edit this file
+<?xml version="1.0" encoding="UTF-8" ?>
+<bug_report>
+    <ID>1</ID>
+    <Title>Footer column headers are not on the same level</Title>
+    <Severiry>Minor</Severiry>
+    <Environment>Windows 10 64 bit Chrome v98.0.3440</Environment>
+    <Precondition>Open site https://qatest-dev.indvp.com</Precondition>"
+    <STR>
+        <1>Open home page</1>
+        <2>Scroll down page</2>
+        <3>Pay attention to the column headings in the footer</3>
+    </STR>
+    <AR>Footer column headers are not on the same level See screenschot</AR>
+    <ER>Column headings on the same level</ER>
+</bug_report>
+Add description "add data"
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Commit changes
+
+ 38. Синхронизировать внешний и локальный репозиторий XML
+git fetch
+git pull
